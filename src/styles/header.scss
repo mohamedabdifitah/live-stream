@@ -1,5 +1,28 @@
 .header{
   position: relative;
   grid-column-start: 1;
-  background-color: yellow;
+  //background-color: yellow;
+  display:grid;
+  grid-template-columns:1fr 2fr  1fr 1fr ;
+}
+.left-icons{
+  grid-column-start:1;
+  display:flex;
+  background-color: inherit;
+  border: none;
+  outline:none;
+  outline-color: inherit;
+}
+.middle{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: green;
+}
+.right-icons{
+  position: relative;
+  grid-column-start: 4;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  //background-color: black;
 }
