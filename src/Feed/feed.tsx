@@ -5,7 +5,7 @@ import ShortFeed from "./shortFeed"
 const Feed : React.FC = () => {
   return (
      <div className="feed">
-     
+      hello
      </div>
     )
 }

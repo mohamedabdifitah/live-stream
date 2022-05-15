@@ -1,6 +1,6 @@
 import React from "react" ;
 import "../styles/BottomNav.scss"
-import IconLabelTabs,{BottomTabs} from "./IconTabs"
+import {BottomTabs} from "./IconTabs"
 /* 
  import all Icons for bottom Navagation Tabs 
  i'll use material icons and React-icons to look better
@@ -8,7 +8,8 @@ import IconLabelTabs,{BottomTabs} from "./IconTabs"
 import HomeIcon from '@mui/icons-material/Home';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import PeopleSharpIcon from '@mui/icons-material/PeopleSharp';
-import {BiMessageRounded} from "react-icons/bi"
+//import {BiMessageRounded} from "react-icons/bi"
+import MessageSharpIcon from '@mui/icons-material/MessageSharp';
 import PersonSharpIcon from '@mui/icons-material/PersonSharp';
 
 const Tabs = [
@@ -29,7 +30,7 @@ const Tabs = [
   },
   {
     "Name":"Activity",
-    "Icon":BiMessageRounded,
+    "Icon":MessageSharpIcon,
     "url":"/"
   },
   {
@@ -41,7 +42,11 @@ const Tabs = [
 const BottomNav:React.FC = () => {
   return (
      <div className="nav bottom">
-     <BottomTabs />
+     {Tabs.map((tab,index)=>{
+     console.log(tab.Icon)
+     return(
+     <BottomTabs Name={tab.Name} Icon={tab.Icon} url={tab.url}/>
+    ) })}
      </div> 
     )
 }

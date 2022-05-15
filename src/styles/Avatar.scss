@@ -7,11 +7,72 @@
   */
   
 }
+.avatar.story{
+  position: relative;
+  width:100%;
+  display:block;
+  height: 100%;
+  //top:5px;
+  left:10px;
+  .avatar-image{
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+ /* .charBadge {
+  position: relative;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}*/
+  .avatar-image.story{
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: radial-gradient(rgb(0,0,0,0.15) 60% ,transparent 0),radial-gradient(white 65% ,transparent 0),linear-gradient(to top right, orange, deeppink)
+  ;
+    
+  }
+  .avatar-text{
+  color:white;
+  position: relative;
+  left:-4px;
+  font-size: 14px;
+    
+  }
+  .badgeOnline{
+    position: relative;
+    top: -20px;
+    left:32px;
+    //right:10px;
+    width: 12px;
+    height: 12px;
+    background: #0edb0e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border:3px solid black;
+    
+  }
+}
 .avatar.home.header{
   position: relative;
   width:100%;
   display:block;
   height: 100%;
+  top:5px;
   .avatar-image{
     position: relative;
     display: inline-block;
@@ -71,6 +132,8 @@
 }
 .avatar-text{
   color:white;
+  position: relative;
+  display:inline-block;
 }
 .badgeOnline{
   position: relative;
@@ -86,3 +149,4 @@
   border-radius: 50%;
   border:3px solid black;
 }
+

@@ -1,12 +1,6 @@
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import HomeIcon from '@mui/icons-material/Home';
-import PhoneIcon from '@mui/icons-material/Phone';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import PersonPinIcon from '@mui/icons-material/PersonPin';
-import AddBoxIcon from '@mui/icons-material/AddBox';
-export default function IconLabelTabs() {
+import "../styles/BottomNav.scss"
+/*export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -43,13 +37,27 @@ export default function IconLabelTabs() {
     </Tabs>
   );
 }
-
+*/
+interface IBTabs{
+  Name:string | null,
+  Icon:React.FC,
+  url:string | null
+}
 // BottomTabs
- const  BottomTabs:React.FC = () => {
+ const  BottomTabs:React.FC<IBTabs> = ({Name,Icon,url}) => {
    return(
-      <button className="button">
-       <HomeIcon />
-       <p> Home </p>
+      <button className="tab-1">
+       <span className="charBadge">9</span>
+      
+       <Icon
+       /*sx=
+       {{
+       width:"30px",
+        height:"30px"
+       }}
+       */
+       />
+       <p className="BottomTabName"> {Name} </p>
       </button>
      )
  }

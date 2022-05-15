@@ -2,6 +2,47 @@
   position: relative;
   width:100%;
   overflow:hidden;
-  background-color: yellow;
+  //background-color: yellow;
   grid-row-start: 3;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+.tab-1{
+  position: relative;
+  border:none;
+  outline:none;
+  background-color: inherit;
+  color:white;
+/*:hover{
+    background-color: #3333;
+  }*/
+}
+.BottomTabName{
+  position: relative;
+  top:-10px;
+}
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+  position: relative;
+  width:30px;
+  top:5px;
+  height: 30px;
+}
+.charBbadge {
+  position: relative;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/*.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root:nth-child(3){
+    position: relative;
+    top:-20px;
+  }
+  */

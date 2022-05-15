@@ -23,6 +23,7 @@ const AvatarComp : React.FC <IAvatar> = ({isOnline,hasStory,userName,image,callb
       */}
        {isOnline?
         <div className="badgeOnline"/>:""}
+         
      </div>
      <div className="avatar-text">
       {userName}
