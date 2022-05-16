@@ -1,5 +1,6 @@
 import * as React from 'react';
 import "../styles/BottomNav.scss"
+import {useNavigate} from "react-router-dom"
 /*export default function IconLabelTabs() {
   const [value, setValue] = React.useState(0);
 
@@ -41,12 +42,13 @@ import "../styles/BottomNav.scss"
 interface IBTabs{
   Name:string | null,
   Icon:React.FC,
-  url:string | null
+  url:string 
 }
 // BottomTabs
  const  BottomTabs:React.FC<IBTabs> = ({Name,Icon,url}) => {
+   const navigate = useNavigate()
    return(
-      <button className="tab-1">
+      <button onClick={()=> navigate(url)} className="tab-1">
        <span className="charBadge">9</span>
       
        <Icon

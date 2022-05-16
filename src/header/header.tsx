@@ -1,4 +1,6 @@
 import React from "react" ;
+import { setShowStory } from "./StoryOnSlice";
+import {useDispatch} from "react-redux"
 import "../styles/header.scss"
 import IconNotification from "../scripts/Notification/NotificationIcon"
 import SearchIcon from '@mui/icons-material/Search';
@@ -14,8 +16,11 @@ import Stories from "../stories/stories"
 
 const Header : React.FC = () => {
   const [storyOn , setStoryOn] = React.useState(false)
+  const dispatch = useDispatch()
   const HandleEvent = () => {
     setStoryOn(!storyOn)
+    dispatch(setShowStory(storyOn))
+    //setStoryOn(false)
     
   }
   return (

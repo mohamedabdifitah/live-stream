@@ -21,7 +21,7 @@ const Tabs = [
   {
     "Name":"Friends",
     "Icon":PeopleSharpIcon,
-    "url":"/"
+    "url":"/friends"
   },
   {
     "Name":"",
@@ -31,12 +31,12 @@ const Tabs = [
   {
     "Name":"Activity",
     "Icon":MessageSharpIcon,
-    "url":"/"
+    "url":"/activity/user"
   },
   {
     "Name":"Profile",
     "Icon":PersonSharpIcon,
-    "url":"/"
+    "url":"/user"
   },
   ]
 const BottomNav:React.FC = () => {
