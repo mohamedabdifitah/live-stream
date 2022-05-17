@@ -1,6 +1,8 @@
 import React from "react" ;
 import { setShowStory } from "./StoryOnSlice";
-import {useDispatch} from "react-redux"
+import {useDispatch} from "react-redux";
+import { useSelector} from "react-redux";
+import {RootState} from "../app/store";
 import "../styles/header.scss"
 import IconNotification from "../scripts/Notification/NotificationIcon"
 import SearchIcon from '@mui/icons-material/Search';

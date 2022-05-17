@@ -4,8 +4,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom' 
 import './App.scss';
 import HomeLayout from "./Layout/Home"
-/*import Header from "./header/header"
 import BottomNav from "./Navigation/BottomNav"
+/*import Header from "./header/header"
 import Feed from "./Feed/feed"
 import Stories from "./stories/stories"
 */
@@ -18,6 +18,7 @@ function App() {
         <Route  path="/" element={<HomeLayout/>} />
         <Route  path="/user" element={<UserLayout/>} />
        </Routes>
+       <BottomNav />
       </div>
     </Router>
   );

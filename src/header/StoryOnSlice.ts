@@ -1,7 +1,9 @@
 import { createSlice,PayloadAction} from "@reduxjs/toolkit";
-
-const initialState ={
-  value:true
+interface IIIState{
+  value:boolean[],
+}
+const initialState={
+  value:false
 }
 export const storyOnSlice = createSlice({
   name:"showStory",

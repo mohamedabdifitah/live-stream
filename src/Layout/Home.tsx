@@ -13,7 +13,7 @@ const HomeLayout:React.FC = () => {
       <Header />
       {showStory?<Stories  />:""}
       <Feed />
-      <BottomNav />
+      {/*<BottomNav />*/}
       
      </div>
     )

@@ -14,6 +14,14 @@ const Stories:React.FC  = () => {
     <Story />
     <Story />
     <Story />
+    <Story />
+    <Story />
+    <Story />
+    <Story />
+    <Story />
+    <Story />
+    <Story />
+    <Story />
     </div>
     )
 }
