@@ -5,6 +5,8 @@
     transform: scale(1.1);
   }
   */
+  position: relative;
+  
 }
 
 .avatar.story {
@@ -13,7 +15,7 @@
     display: block;
     height: 100%;
     //top:5px;
-    left: 10px;
+    //left: -px;
     .avatar-image {
         position: relative;
         display: inline-block;
@@ -70,6 +72,7 @@
     display: block;
     height: 100%;
     top: 5px;
+    left:0%;
     .avatar-image {
         position: relative;
         display: inline-block;
@@ -87,10 +90,10 @@
     .badgeOnline {
         position: relative;
         top: -20px;
-        left: 32px;
+        left: 34px;
         //right:10px;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         background: #0edb0e;
         color: #ffffff;
         display: flex;
@@ -147,3 +150,41 @@
     border-radius: 50%;
     border: 3px solid black;
 }
+@media all and (max-width: 700px){
+  .avatar {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100%;
+    top: 5px;
+    left:5px;
+    .avatar-image {
+        position: relative;
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+    }
+    .avatar-image.story {
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background: radial-gradient(rgb(0, 0, 0, 0.15) 60%, transparent 0), radial-gradient(white 65%, transparent 0), linear-gradient(to top right, orange, deeppink);
+    }
+    .badgeOnline {
+        position: relative;
+        top: -23px;
+        left: 50px;
+        //right:10px;
+        width: 13px;
+        height: 13px;
+        background: #0edb0e;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+}}
