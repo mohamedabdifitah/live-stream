@@ -1,103 +1,114 @@
-.nav.bottom{
-  position:fixed;
-  width:100%;
-  overflow:hidden;
-  height: 75px;
-  top:90%;
-  //background-color: yellow;
-  //grid-row-start: 4;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.e-badge.e-badge-overlap.e-badge-notification{
-  background-color: red;
-  color:white;
+.nav.bottom {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 75px;
+    top: 90%;
+    //background-color: yellow;
+    //grid-row-start: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    @media only screen and (min-width: 359px) {
+        .nav.bottom {
+            display: none;
+        }
+    }
 }
 
-.tab-1{
-  position: relative;
-  top:5px;
-  border:none;
-  outline:none;
-  background-color: inherit;
-  color:white;
-/*:hover{
+.e-badge.e-badge-overlap.e-badge-notification {
+    background-color: red;
+    color: white;
+}
+
+.tab-1 {
+    position: relative;
+    top: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    /*:hover{
     background-color: #3333;
   }*/
 }
-.tab-1:nth-child(3){
-  .charBadge:{
-  position: absolute;
-  top: 1px;
-  right: 4px;
-  //left:45px;
-  width: 20px;
-  height: 20px;
-  background:  red;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  content: "";
-  
-  
+
+.tab-1:nth-child(3) {
+    .charBadge: {
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        //left:45px;
+        width: 20px;
+        height: 20px;
+        background: red;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        content: "";
+    }
 }
+
+.BottomTabName {
+    position: relative;
+    top: -10px;
 }
-.BottomTabName{
-  position: relative;
-  top:-10px;
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    position: relative;
+    top: 5px;
 }
-.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
-  position: relative;
-  top:5px;
-}
+
 .charBadge {
-  position: absolute;
-  top: 1px;
-  z-index: 5;
-  right: 14px;
-  //left:45px;
-  width: 20px;
-  height: 20px;
-  background:  red;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  content: "";
+    position: absolute;
+    top: 1px;
+    z-index: 5;
+    right: 14px;
+    //left:45px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    content: "";
 }
 
+.add__btn {
+    background-color: inherit;
+    outline: none;
+    border: none;
+}
 
-.add__btn{
-  background-color: inherit;
-  outline:none;
-  border:none;
+.badge-Home {
+    position: relative;
+    background-color: red;
+    top: -16px;
+    right: 17px;
 }
-.badge-Home{
-  position: relative;
-  background-color:red;
-  top:-16px;
-  right:17px;
+
+.badge-Friends {
+    position: relative;
+    background-color: red;
+    top: -16px;
+    right: 16px;
 }
-.badge-Friends{
-  position: relative;
-  background-color:red;
-  top:-16px;
-  right:16px;
+
+.badge-Inbox {
+    position: relative;
+    background-color: red;
+    top: -19px;
+    right: 15px;
 }
-.badge-Inbox{
-  position: relative;
-  background-color:red;
-  top:-19px;
-  right:15px;
-}
-.badge-Profile{
-  position: relative;
-  //top:-20px;
-  top:-20px;
-  right:18px;
+
+.badge-Profile {
+    position: relative;
+    //top:-20px;
+    top: -20px;
+    right: 18px;
 }
 
 

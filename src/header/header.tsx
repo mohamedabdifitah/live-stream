@@ -13,6 +13,7 @@ import KeyboardArrowDownSharpIcon from '@mui/icons-material/KeyboardArrowDownSha
 import KeyboardArrowUpSharpIcon from '@mui/icons-material/KeyboardArrowUpSharp';
 //import {MdKeyboardArrowDown,MdKeyboardArrowUp} from "react-icons/md"
 import Stories from "../stories/stories"
+import BottomNav from "../Navigation/BottomNav";
 //import "../styles/IconNotification.scss"
 
 
@@ -54,6 +55,7 @@ const Header : React.FC = () => {
      <div className="middle">
      </div>
      <div className="right-icons">
+       
       {/*<IconNotification />*/}
       <IconButton
       sx={{
