@@ -44,7 +44,37 @@
     top: -25px;
 }
 
+.user-data {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
 .descript {
+    position: relative;
     color: white;
     text-align: center;
+    top: -55px;
+    background-color: aqua;
+    width: 30%;
+    height: 100px;
+    left: 40%;
+    align-items: center;
+}
+
+.descript-link {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    left: 30%;
+    background-color: red;
+    width: 50%;
+    height: 40%;
+}
+
+.link {
+    position: relative;
+    top: -20px;
 }
