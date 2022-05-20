@@ -6,7 +6,6 @@
     height: 50%;
     overflow: scroll;
     //top: 5px;
-   
 }
 
 .content {
@@ -23,7 +22,9 @@
     position: relative;
     color: white;
     height: 60px;
-    display: flex;
+    display: grid;
+    background-color: indigo;
+    grid-template-columns: 2fr 1fr;
 }
 
 .follow {
@@ -39,10 +40,10 @@
 
 .username-text {
     position: relative;
-    width: 30%;
     height: 50px;
     font-size: 30px;
     top: -25px;
+    grid-column-start: 1;
 }
 
 .user-data {
@@ -79,81 +80,79 @@
     position: relative;
     top: -20px;
 }
- @media screen and (max-width: 700px){
-      .user-profile{
+
+@media screen and (max-width: 700px) {
+    .user-profile {
         position: relative;
         grid-column-start: 2;
         //background-color: yellow;
-        display:grid;
+        display: grid;
         height: 35%;
         overflow: hidden;
         //flex-direction: column;
-        
         grid-template-rows: 70% 30%;
         //grid-template-columns: 5rem 5rem;
-      }
-      .content{
+    }
+    .content {
         grid-row-start: 1;
-        display:grid;
-        width:100%;
-        height:70%;
+        display: grid;
+        width: 100%;
+        height: 70%;
         left: 0%;
         //background-color: green;
         //grid-template-rows:5rem 15rem ;
         grid-template-columns: 5rem 80%;
         //width:100% ;
         //grid-template-columns: 5rem 5rem 5rem;
-        .user-content{
-          position: relative;
-          left:9px;
-          display:grid;
-          //width:100%;
-          width:100%;
-          //height:50;
-          //background-color: purple;
-          
-          grid-template-rows: 1fr 1fr;
-          //grid-template-columns:;
-          .user-name{
+        .user-content {
             position: relative;
-            display:grid;
-            //background-color: indigo;
-            grid-template-columns: 2fr 1fr;
-            .username-text{
-              position: relative;
-              font-size: 20px;
-              //background-color: violet;
-              grid-column-start: 1;
-              width:100%;
-              //text-align: center;
-              top:-6px;
-              height:30px;
+            left: 9px;
+            display: grid;
+            //width:100%;
+            width: 100%;
+            //height:50;
+            //background-color: purple;
+            grid-template-rows: 1fr 1fr;
+            //grid-template-columns:;
+            .user-name {
+                position: relative;
+                display: grid;
+                //background-color: indigo;
+                grid-template-columns: 2fr 1fr;
+                .username-text {
+                    position: relative;
+                    font-size: 20px;
+                    //background-color: violet;
+                    grid-column-start: 1;
+                    width: 100%;
+                    //text-align: center;
+                    top: -6px;
+                    height: 30px;
+                }
             }
-          }
-          .user-data{
+            .user-data {
+                position: relative;
+                height: 3rem;
+                display: grid;
+                grid-template-columns: 1fr 2fr 2fr;
+            }
+        }
+        h3 {
             position: relative;
-            height: 3rem;
-            display:grid;
-            grid-template-columns: 1fr 2fr 2fr;
-          }
+            font-size: 15px;
+            //background-color: indigo;
+            top: -18px;
         }
-        h3{
-          position: relative;
-          font-size: 15px;
-          //background-color: indigo;
-          top:-18px;
+        .follow {
+            position: relative;
+            border: none;
+            border-radius: 5%;
+            width: 80px;
+            font-size: 15px;
+            left: -5px;
         }
-        .follow{
-          position: relative;
-          border:none;
-          border-radius: 5%;
-          width:80px;
-          font-size: 15px;
-          left: -5px;
-          
-        }
-      }
-      .descript{
+    }
+    .descript {
         position: relative;
         left: 0%;
         width: 100%;
@@ -161,24 +160,22 @@
         //width: 1;
         grid-row-start: 2;
         //background-color: blue;
-        .descript-content{
-          position: relative;
-          font-size: 15px;
-        }
-        .descript-link{
-          position: relative;
-          top:-10px;
-          //left:-1%;
-          //gap:15px;
-          //gap:15px;
-          .link{
-            //text-decoration: underline;
-            //font-size: 13px;
-            //color:blue;
+        .descript-content {
             position: relative;
-            
-          }
+            font-size: 15px;
         }
-        
-      }
+        .descript-link {
+            position: relative;
+            top: -10px;
+            //left:-1%;
+            //gap:15px;
+            //gap:15px;
+            .link {
+                //text-decoration: underline;
+                //font-size: 13px;
+                //color:blue;
+                position: relative;
+            }
+        }
     }
+}
