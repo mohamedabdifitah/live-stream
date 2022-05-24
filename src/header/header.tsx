@@ -18,12 +18,14 @@ import BottomNav from "../Navigation/BottomNav";
 
 
 const Header : React.FC = () => {
-  const [storyOn , setStoryOn] = React.useState(false)
+  const showStory = useSelector((state:RootState) => state.showStory.value)
+  const [storyOn , setStoryOn] = React.useState<React.SetStateAction<boolean>>()
   const dispatch = useDispatch()
   const HandleEvent = () => {
-    setStoryOn(!storyOn)
-    dispatch(setShowStory(storyOn))
+    //setStoryOn(!showStory)
+    dispatch(setShowStory(!showStory))
     //setStoryOn(false)
+    //alert(showStory)
     
   }
   return (
@@ -33,7 +35,7 @@ const Header : React.FC = () => {
      onClick={HandleEvent}
      >
      <AvatarComp isOnline={true} hasStory={true} userName={""} image={"https://random.imagecdn.app/500/150" } callback={"https://random.imagecdn.app/500/150"} className={"home header"} isLive={false} />
-      {storyOn?<KeyboardArrowUpSharpIcon 
+      {showStory?<KeyboardArrowUpSharpIcon 
       sx={{
       color:"white",
       width:"30px",
