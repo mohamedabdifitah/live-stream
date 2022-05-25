@@ -2,29 +2,38 @@
   position: relative;
   width: 100%;
   height: 100%;
+  //overflow: scroll;
   //background-color: white;
   //background-color: yellow;
+}
+.live-video{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .video{
   position: absolute;
   width: 100%;
-  height: 100%;
+  //height: 70%;
   top:-10%;
-  background-color: green;
+  object-fit: cover;
   transform: scaleX(-1);
 }
-.Live-Comments{
-  position:absolute;
-  z-index: 100;
-  left:50%;
-  //background-color: black;
-  width:200px;
-  height: 400px;
-  //text-align: center;
-  color: white;
-  top:10%;
+.live-comment{
+  position: relative;
+  width:100%;
+  overflow-y:scroll;
+  top:40%;
+  height: 49%;
+  background-color: green;
+  display:grid;
+  grid-template-rows: 50px 50px;
+  
+  gap: 5px;
 }
-.comment{
-  display: flex;
-  flex-direction:row;
+.comment.live{
+  position: relative;
+  //height: 80px;
+ // height: 100px;
+  background-color: aqua;
 }
