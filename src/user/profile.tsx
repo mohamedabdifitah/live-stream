@@ -7,7 +7,14 @@ const Profile:React.FC = () => {
   return (
      <div className="user-profile">
        <div className="content">
+       <div className="Avatar">
        <AvatarComp isOnline={true} hasStory={true} userName={""} image={"https://random.imagecdn.app/500/150" } callback={"https://random.imagecdn.app/500/150"} className={""} isLive={false} />
+       </div>
+        <div className="user-name"> 
+           <p className="username-text">
+           mohamed abdifitah</p>
+          </div>
+       {/*
        <div className="user-content">
            <div className="user-name"> 
            <p className="username-text">
@@ -32,8 +39,9 @@ const Profile:React.FC = () => {
            <BiLink width={"30px"} height={"30px"}/>
            <h4 className="link">Description-link.</h4>
          </a>
-           
+           */}
        </div>
+      
      </div>
     )
 }
