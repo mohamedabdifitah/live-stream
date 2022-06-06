@@ -1,0 +1,15 @@
+.friends-page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  //background-color: yellow;
+  display: grid;
+  grid-template-rows: 60px 80%;
+  gap:5px;
+}
+.frPage-sect-2{
+  position: relative;
+  height: 100%;
+  background-color: blue;
+  overflow-y: scroll;
+}

@@ -4,12 +4,15 @@
     height: 100%;
     display: grid;
     grid-template-rows: 60px 80%;
+    gap:5px;
 }
 
-.user-container {
+.user-sec {
     position: relative;
-    display: flex;
-    background-color: aliceblue;
-    flex-direction: column;
+    display: grid;
+    background-color: blue;
+    //flex-direction: column;
+    grid-template-rows: 50% 50%;
     //gap:5px;
+    overflow-y: scroll;
 }

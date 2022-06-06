@@ -4,6 +4,15 @@
   height: 100%;
   display:grid;
  // background-color: yellow;
-  grid-template-rows: 60px  90px 68% 75px;
+  grid-template-rows: 60px 80%;
   
+}
+.home-sect-2{
+  position: relative;
+  grid-row-start: 2;
+  display: grid;
+  overflow-y: scroll;
+  top:5px;
+  background-color: blue;
+  grid-template-rows:100px 84%;
 }

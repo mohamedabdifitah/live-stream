@@ -8,11 +8,11 @@ const UserLayout : React.FC = () => {
   return (
      <div className="UserLayout">
      <Header />
-     <div className="user-container">
+     <section className="user-sec">
        <Profile />
        <Posts />
-      </div>
-      {/*<BottomNav />*/}
+      </section>
+      <BottomNav />
      </div>
     )
 }

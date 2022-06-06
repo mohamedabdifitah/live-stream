@@ -1,0 +1,16 @@
+.inbox{
+  position: relative;
+  width:100%;
+  background-color:black;
+  height: 100%;
+  //background-color: yellow;
+  display: grid;
+  grid-template-rows: 60px 80%;
+  gap: 5px;
+}
+.inbox-sect-2{
+  position: relative;
+  height: 100%;
+  background-color: blue;
+  
+}

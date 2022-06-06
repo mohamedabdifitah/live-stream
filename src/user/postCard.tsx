@@ -4,7 +4,7 @@ import "../styles/postcard.scss"
 export default function PostCard() {
   return (
     <div className="postcard">
-     
+     hi
     </div>
   )
 }

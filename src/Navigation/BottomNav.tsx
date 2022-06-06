@@ -27,12 +27,12 @@ const Tabs = [
   {
     "Name":"",
     "Icon":AddBoxIcon,
-    "url":"/"
+    "url":"/1234"
   },
   {
     "Name":"Activity",
     "Icon":MessageSharpIcon,
-    "url":"/activity/user"
+    "url":"/login"
   },
   {
     "Name":"Profile",
@@ -68,7 +68,7 @@ const BottomNav:React.FC = () => {
       }}
      />
     </button>
-    <BottomTabs Name={"Inbox"} Icon={MessageSharpIcon} url={"/account/activities"}/>
+    <BottomTabs Name={"Inbox"} Icon={MessageSharpIcon} url={"/inbox/messages"}/>
     <BottomTabs Name={"Profile"} Icon={PersonSharpIcon} url={"/user"}/>
      </div> 
     )

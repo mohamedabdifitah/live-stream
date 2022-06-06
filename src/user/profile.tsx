@@ -10,10 +10,13 @@ const Profile:React.FC = () => {
        <div className="Avatar">
        <AvatarComp isOnline={true} hasStory={true} userName={""} image={"https://random.imagecdn.app/500/150" } callback={"https://random.imagecdn.app/500/150"} className={""} isLive={false} />
        </div>
+       {/*
         <div className="user-name"> 
            <p className="username-text">
            mohamed abdifitah</p>
           </div>
+          
+          */}
        {/*
        <div className="user-content">
            <div className="user-name"> 

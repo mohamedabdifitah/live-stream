@@ -11,14 +11,14 @@ interface IBTabs{
    const navigate = useNavigate()
    return(
       <button onClick={()=> navigate(url)} className="tab-1">
-       {/*<span className="charBadge">9</span>
+       {/*<span className="charBadge">999</span>
        */}
-       <Icon
-      
-       />
-        <div className={`badge-${Name}`}>
-       <span className="e-badge e-badge-overlap e-badge-notification">9</span> 
+       <Icon />
+        {/*<div className={`badge-${Name}`}>
+        <span className="e-badge e-badge-overlap e-badge-notification">9</span> 
        </div>
+       */}
+       
        <p className="BottomTabName"> {Name} </p>
       </button>
      )

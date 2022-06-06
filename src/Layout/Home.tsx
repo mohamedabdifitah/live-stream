@@ -11,9 +11,11 @@ const HomeLayout:React.FC = () => {
   return (
      <div className="home">
       <Header />
+      <section className="home-sect-2">
       {showStory?<Stories  />:""}
       <Feed />
-      {/*<BottomNav />*/}
+      </section>
+      <BottomNav />
       
      </div>
     )
